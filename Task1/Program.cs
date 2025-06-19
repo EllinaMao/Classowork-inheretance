@@ -9,9 +9,11 @@ Builder (содержит информацию о строителе), клас�
 Каждый из классов должен содержать необходимые
 для работы методы.
  */
+using System.Reflection.Metadata;
+
 namespace Task1
 {
-    internal class Program
+    internal static class Program
     {
         static void Main(string[] args)
         {
@@ -22,7 +24,6 @@ namespace Task1
                 new DateTime(2023, 1, 9, 0, 0, 0, DateTimeKind.Utc),
                 "Building a house"
             );
-
             Bob.Show();
             //
             Human Nammy = new Sailor(
@@ -34,11 +35,22 @@ namespace Task1
                 "Odessa - SanFrancisco");
             Nammy.Show();
 
+            Human Dandy = new Pilot(
+                "Dandy",
+                "Female",
+                "Captain",
+                new DateTime(1939, 1, 5, 0, 0, 0, DateTimeKind.Utc),
+                true,
+                "Odessa - SanFrancisco",
+                1234
+                ); 
 
 
-
-
-
+            Dandy.Show();
+              
+                
+                
+ 
         }
     }
 }
