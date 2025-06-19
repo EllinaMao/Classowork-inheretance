@@ -40,9 +40,8 @@ namespace Task1
                 "Female",
                 "Captain",
                 new DateTime(1939, 1, 5, 0, 0, 0, DateTimeKind.Utc),
-                true,
-                "Odessa - SanFrancisco",
-                1234
+                1234,
+                false
                 ); 
 
 

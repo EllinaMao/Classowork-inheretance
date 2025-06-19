@@ -10,9 +10,9 @@ namespace Task1
     internal class Sailor:Human
     {
         readonly bool Voyage;
-        readonly string Direction;
+        readonly string? Direction;
 
-        public Sailor(string name, string gender, string job, DateTime birthdate, bool voyage, string direction) : base(name, gender, job, birthdate){
+        public Sailor(string name, string gender, string job, DateTime birthdate, bool voyage, string? direction = null) : base(name, gender, job, birthdate){
 
             Voyage = voyage;
             Direction = direction;
@@ -21,10 +21,7 @@ namespace Task1
         public override void Show()
         {
             base.Show();
-            Console.WriteLine("Voyage: {0}" +
-                "\nDirection: {1}",
-                Voyage, Direction);
-
+            Console.WriteLine(Voyage ? $"In Voyage\nDirection:{Direction}" : "Not in voyage");
             Console.WriteLine();
 
         }

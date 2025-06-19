@@ -9,7 +9,7 @@ namespace Task1
     internal class Pilot : Sailor
     {
         readonly int AmountOfPeople;
-        public Pilot(string name, string gender, string job, DateTime birthdate, bool voyage, string direction, int amountOfPeople) : base(name, gender, job, birthdate, voyage, direction)
+        public Pilot(string name, string gender, string job, DateTime birthdate, int amountOfPeople, bool voyage,  string? direction = null) : base(name, gender, job, birthdate, voyage, direction)
         {
             AmountOfPeople = amountOfPeople;
         }
