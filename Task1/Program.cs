@@ -24,7 +24,7 @@ namespace Task1
             );
 
             Bob.Show();
-
+            //
             Human Nammy = new Sailor(
                 "Nammy",
                 "Male",
